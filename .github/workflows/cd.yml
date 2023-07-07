@@ -10,10 +10,12 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Pull master branch
-        run: cd C:\Users\user\Desktop\JH\workspace\actions-example 
-             git pull origin main
+        run: |
+          cd C:\Users\user\Desktop\JH\workspace\actions-example 
+          git pull origin main
       - name: Build and Deploy
-        run: cd C:\Users\user\Desktop\JH\workspace\actions-example
-             npm install
-             npm start
+        run: |
+          cd C:\Users\user\Desktop\JH\workspace\actions-example
+          npm install
+          pm2 restart 0
              
