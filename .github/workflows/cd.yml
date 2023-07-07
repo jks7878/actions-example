@@ -1,0 +1,19 @@
+name: actions-deploy
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Pull master branch
+        run: cd C:\Users\user\Desktop\곽지훈\workspace\actions-example 
+             git pull origin main
+      - name: Build and Deploy
+        run: cd C:\Users\user\Desktop\곽지훈\workspace\actions-example
+             npm install
+             npm start
+             
