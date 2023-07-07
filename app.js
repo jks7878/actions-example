@@ -8,7 +8,7 @@ app.listen(3000, () => {
 const { factorial } = require("./example");
 
 function main() {
-  return factorial(1, 6);
+  return factorial(1, 7);
 }
 
 app.use("/", (req, res) => {
