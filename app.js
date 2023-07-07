@@ -1,7 +1,16 @@
-const { factorial } = require('./example');
+const express = require("express");
+const app = express();
+
+app.listen(3000, () => {
+  console.log(`http://121.138.106.4:3000`);
+});
+
+const { factorial } = require("./example");
 
 function main() {
-    console.log(example.factorial(1,5));
+  return factorial(1, 4);
 }
 
-main();
+app.use("/", (req, res) => {
+  res.json(main());
+});

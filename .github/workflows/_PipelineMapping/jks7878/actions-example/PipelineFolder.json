@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "jks7878/actions-example",
+  "pipelineDirectory": "actions-example",
+  "workspaceDirectory": "actions-example\\actions-example",
+  "repositories": {
+    "jks7878/actions-example": {
+      "repositoryPath": "actions-example\\actions-example",
+      "lastRunOn": "07/07/2023 12:52:43 +09:00"
+    }
+  },
+  "lastRunOn": "07/07/2023 12:52:43 +09:00"
+}
